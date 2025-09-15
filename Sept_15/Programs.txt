@@ -1,0 +1,89 @@
+import numpy as np
+
+x = np.array([1, 2, 3])
+print(x)
+
+******************************************************************************************************************************************************************
+
+import numpy as np
+
+# This is how you define a range and tell till where numbers will be stored 
+x = list(range(10)) 
+y = np.array(x)
+print(y)
+# I am not sure what size is this line printing
+print(y.ndim) 
+print(y.shape)
+
+*******************************************************************************************************************************************************************
+
+import numpy as np
+
+x = np.array([1, 2, 1, 2, 3, 4, 1 ,4 ,1])
+print(x)
+
+y = np.zeros
+print(y)
+
+******************************************************************************************************************************************************************
+
+# Counting how many times element in first array is greatet than the second array
+
+import numpy as np
+
+x = np.random.randint(1, 101, size=10)
+y = np.random.randint(1, 101, size=10)
+
+greater = x>y
+less = x<y
+equal = x==y
+
+print("Elements greater is: ", greater)
+print("Elements less is: ", less)
+print("Equal elemenst are: ", equal)
+
+# To count how many were greater
+count = np.sum(greater)
+print("Number of elements greater in array x is:", count)
+
+*****************************************************************************************************************************************************************
+
+# Coverts python list to numpy array
+# Finding average
+# Number of values above average
+
+import numpy as np
+
+marks = list([45, 78, 23, 96, 92, 66, 45, 56, 90, 84])
+np_marks = np.array(marks)
+
+print(marks)
+print(np_marks)
+
+average = np.mean(np_marks)
+print(average)
+
+above_average = np_marks[marks > average]
+print(above_average)
+
+
+****************************************************************************************************************************************************************
+
+import numpy as np
+
+# You need to create a new 4x4 matrix
+# Print the second row
+
+# The below code creates a 4x4 array and stores number from 1 to 16
+arr = np.arange(1, 17).reshape(4, 4)
+# The reshape method is used to format the matrix as per the user defined row and columns
+
+print(arr)
+
+# To print the 2nd row we can use:
+print("Second row", arr[2, :])
+
+# To print the 3rd column we can do it as
+print("Third column; ", arr[:, 3])
+
+****************************************************************************************************************************************************************
