@@ -1,0 +1,31 @@
+import numpy as np
+
+# full function is used to create a specified order of array and fill it with a specific number
+arr = np.full((2, 3), 10)
+print(arr)
+
+# To change the data type of an array we do so as below
+arr1 = np.array([1, 2, 4], dtype = np.float64)
+print(arr1)
+
+# reshape() can change the dimensions of an array
+# ravel() can convert a multi-dimensional array to 1D array
+# See what is np.linalg()
+
+#####################################################################################################################################################
+
+import numpy as np
+
+# reshape is used to create an array of nxm dimensions
+arr = np.arange(1, 13).reshape(3, 4)
+
+print(arr)
+print("")
+
+# ravel is used to convert nxm dimension array to 1D
+arr = np.ravel(arr)
+
+print(arr)
+
+######################################################################################################################################################
+
