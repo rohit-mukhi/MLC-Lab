@@ -1,7 +1,7 @@
 import numpy as np
 
 # reshape is used to create an array of nxm dimensions
-arr = np.arange(1, 17).reshape(4, 4)
+arr = np.arange(1, 13).reshape(3, 4)
 
 print(arr)
 print("")
