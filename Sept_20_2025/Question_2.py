@@ -11,6 +11,8 @@ while count<1000:
     arr[val] = arr[val] + 1
     count = count + 1
 
+print("Upon rolling the die 1000 times")
+print("")
 count = 1
 while(count <= 6):
     print(f"{count} occured {arr[count]} times")
