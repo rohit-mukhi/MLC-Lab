@@ -2,7 +2,8 @@ import pandas as pd
 import numpy as np
 
 arr = np.array([14, 45, 67, 88])
-x = pd.Series(arr)
+x = pd.Series(arr , index=['A', 'B', 'C', 'D'])
+# Adding index part is optional
 print(x)
 
 """
