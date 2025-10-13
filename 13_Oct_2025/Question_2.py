@@ -1,14 +1,10 @@
 import matplotlib.pyplot as plt
 
-date = ["25/12", "26/12", "27/12"]
-temp = [8.5, 10.5, 6.8]
+X = range(-15, 16)
+Y = [x**2 for x in X]
 
-plt.plot(date, temp)
-
-plt.xlabel("Date")
-plt.ylabel("Temperature")
-plt.title("Date wise temperature chart")
-plt.grid(True)
-plt.yticks(temp)
+plt.plot(X, Y, 'r')
+plt.xlabel("X axis")
+plt.ylabel("Y axis")
+plt.title("Plotting y = x^2")
 plt.show()
-
