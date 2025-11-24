@@ -44,6 +44,21 @@ data = pd.DataFrame({
     'Total Grade': grade
 })
 
+*******************************************************************************************************************
+
+# This is one way of encoding data: 
+
+le = preprocessing.LabelEncoder()
+le.fit(data['Total Grade'])
+
+data['Total Grade'] = le.transform(data['Total Grade'])
+
+print(data)
+
+# Another way of encoding data is:
+# You can complete the rest part
+target = data['Total Grade'].replace('A', 'B', 'C')
+
 print(data)
 
 *********************************************************************************************************************
