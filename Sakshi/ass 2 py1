@@ -1,0 +1,156 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#1:
+"""rain= input("Is it raining: (Yes/No):")
+if rain == "yes":
+    print("Carry an umbrella.")
+else:
+    print("Bye")
+    
+   
+#2:
+rain = input("Is it raining: (Yes/No):")
+if rain == "yes":
+    print("Carry an umbrella")
+elif rain == "No":
+    print("No need to carry an umbrella")
+else:
+    print("Bye")
+    
+#3:
+marks= int(input("Enter your marks: "))
+if marks>= 90:
+    print("Grade: A - Excellent")
+elif marks>= 80:
+    print("Grade: B - Good")
+elif marks>= 70:
+    print("Grade: C - Average")
+elif marks>= 60:
+    print("Grade: D - Needs Improvement")
+else:
+    print("Grade: F - Fail")
+    
+#Triangle Type:
+a = int(input("Enter side 1: "))
+b = int(input("Enter side 2: "))
+c = int(input("Enter side 3: "))
+if a == b == c:
+    print("The triangle is Equilateral.")
+elif a == b or b == c or a == c:
+    print("THe triangle is Isoceles.") 
+else:
+    print("THe triangle is Scalene.")    
+    
+    
+#4:
+num = int(input("Enter a number: "))
+if num%2 == 0:
+    print("The number is Even.")
+else:
+    print("THe number is Odd.")
+    
+#5:
+year= int(input("Enter a year: "))
+if(year%4 == 0 and year%100 != 0) or (year%400 == 0):
+   print("Leap Year.")
+else:
+    print("Not a Leap Year.")"""
+    
+#6:
+"""num= int(input("Enter a number: "))
+if num>1:
+    for i in range(2, num):
+        if num%i == 0:
+            print("Not a Prime Number.")
+            break
+        else:
+            print("Prime NUmber.")
+    else:
+         print("Not a Prime NUmber.")"""
+         
+#7:
+"""n= int(input("Enter a number: "))
+total=0
+for num in range(2, n):
+    for i in range(2, num):
+        if num%i == 0:
+            break
+    else:
+        total += num
+print("Sum of all prime numbers below", n, "is", total)"""
+
+#8:
+"""while True:
+    n=int(input("Enter a positive number: "))
+    if n>0:
+        break
+if n%2 == 0:
+    n = n*2
+else:
+    n = n**2
+print("Result:",n)"""
+
+#9:
+'''try:
+    n= int(input("Enter a number: "))
+    match n%5:
+        case 0:
+            print("REmainder is 0")
+        case 1:
+            print("Remainder is 1.")
+        case 2:
+            print("REaminedr is 2")
+        case 3:
+            print("Remainder is 3")
+        case 4:
+            print("Remainder is 4")
+except:
+    print("Invalid input.")'''
+    
+#10:
+'''string= input("Enter a string: ")
+for i in range(len(string)):
+    for j in range(i+1, len(string)+1):
+        print(string[i:j])'''
+        
+#11:
+'''while True:
+   a= input("Enter first number (or exit): ")  
+   if a == "exit":
+       break 
+   b= input("Enter a second number: ")     
+   op= input("Enter operator(+,-,*,/): ")
+   a = float(a)
+   b = float(b)
+   if op == '+':
+       print("REsult:", a+b)
+   elif op == '-':
+       print("Result:",a-b)
+   elif op == '*':
+       print("Result:",a*b)
+   elif op == '/':
+       if b!= 0:
+           print("Result:",a/b)
+   else:
+       print("Cannot divide by zero!")
+else:
+       print("Invalid operator")'''
+       
+#12:
+'''import statistics
+data = [1,2,3,2,3,4,4,4,5,4,5,6]
+print("Mean =", statistics.mean(data))
+print("Median =",statistics.median(data))
+print("Mode =", statistics.mode(data))'''
+
+#14:
+room= input("Enter room type (Standard/Deluxe/Suite): ")
+nights= int(input("Enter number of nights: "))
+season= input("Enter season (peak/off):")
+
+
+            
+
+        
+
+
